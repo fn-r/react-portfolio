@@ -24,5 +24,5 @@ export {
     aboutRadial2,
     headerGIF,
     logo,
-    logoWhite
+    logoWhite,
 }

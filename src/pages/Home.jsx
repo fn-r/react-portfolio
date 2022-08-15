@@ -8,7 +8,7 @@ import HeaderNavBar from "../components/HeaderNavBar";
 import MainNavBar from "../components/MainNavBar";
 import OverlayForm from "../components/OverlayForm";
 import Portfolio from "../components/Portfolio";
-import { about_data, project_data } from "../data/data";
+import { about_data, project_data, social_data } from "../data/data";
 import { headerGIF, conRadial2, logoWhite, featRadial1, heroLine2, heroLine3, aboutRadial2 } from "../utils/Assets";
 
 const { Helmet } = require("react-helmet");
@@ -60,7 +60,7 @@ const RenderHeader = () => {
                         </div>
                     </div>
                     <div className="hidden lg:block w-full lg:w-auto p-6 self-end">
-                        <div style={{ width: '280px', height: '280px', background: '#46bb88', padding: '20px'}} className="flex justify-center items-center overflow-hidden border rounded-full">
+                        <div style={{ width: '280px', height: '280px', background: '#46bb88', padding: '20px' }} className="flex justify-center items-center overflow-hidden border rounded-full">
                             <img className="flex shrink-0 min-h-full min-w-full" src={headerGIF} alt="" />
                         </div>
                     </div>
@@ -202,10 +202,14 @@ const RenderContact = () => {
                             <div className="w-full p-10">
                                 <div className="md:max-w-xs">
                                     <h3 className="mb-6 font-heading font-medium text-xl">You can find me at:</h3>
-                                    <p className="text-lg text-gray-400 mb-4">Twitter</p>
-                                    <p className="text-lg text-gray-400 mb-4">LinkedIn</p>
-                                    <p className="text-lg text-gray-400 mb-4">GitHub</p>
-                                    <p className="text-lg text-gray-400 mb-4">AngelList</p>
+                                    {social_data && social_data.map(data => {
+                                        return (
+                                            <a href={data.link} rel="noopener noreferrer" target="_blank">
+                                                <span>{data.svg}</span>
+                                                <p className="text-lg text-gray-400 mb-4">{data.name}</p>
+                                            </a>
+                                        )
+                                    })}
                                     <p className="text-lg text-gray-400 mb-4">Mail</p>
                                 </div>
                             </div>

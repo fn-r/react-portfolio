@@ -7,20 +7,43 @@ export const about_data = [
 export const project_data = [
     {
         name: "Passwrap",
-        link: "https://www.passwrap-ui.netlify.app/",
-        img_link: "https://github.com/fn-r/portfolio/raw/main/images/gif/passwrap.gif",
+        link: "https://passwrap-ui.netlify.app/",
+        img_link: "https://i.ibb.co/KzkGnzR/react-portfolio.gif",
         img_desc: "Passwrap - Password Manager",
     },
     {
         name: "Bleid",
-        link: "https://www.bleid.netlify.app/",
+        link: "https://bleid.netlify.app/",
         img_link: "https://github.com/fn-r/portfolio/raw/main/images/gif/bleid.gif",
         img_desc: "Bleid - Random UUID Generator",
     },
     {
         name: "Makemee",
-        link: "https://www.makemee.netlify.app/",
+        link: "https://makemee.netlify.app/",
         img_link: "https://github.com/fn-r/portfolio/raw/main/images/gif/makemee.gif",
         img_desc: "Makemee - Restaurant Templates",
+    },
+]
+
+export const social_data = [
+    {
+        name: "Twitter",
+        link: "",
+        svg: ""
+    },
+    {
+        name: "LinkedIn",
+        link: "",
+        svg: ""
+    },
+    {
+        name: "GitHub",
+        link: "",
+        svg: ""
+    },
+    {
+        name: "AngelList",
+        link: "",
+        svg: ""
     },
 ]

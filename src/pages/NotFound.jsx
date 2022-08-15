@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { logoWhite, http404, httpRadial2 } from "../utils/Assets"
 
 const NotFound = () => (
-    <section className="relative pt-16 pb-64 bg-black overflow-hidden">
+    <section className="relative h-screen w-screen pt-16 pb-64 bg-black overflow-hidden">
         <img className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full" src={httpRadial2} alt="" />
         <div className="relative z-10 container mx-auto px-4">
             <img className="mx-auto mb-64" src={logoWhite} alt="logo" />
