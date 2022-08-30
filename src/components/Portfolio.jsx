@@ -31,6 +31,7 @@ const Portfolio = ({ portfolio_bg, relative_status, data }) => {
                             className="relative mx-auto px-0 md:px-5 lg:px-0 transform hover:scale-110 transition ease-in-out duration-500"
                             src={data.img_link}
                             alt={data.img_desc}
+                            loading="lazy"
                         />
                     </a>
                 </div>

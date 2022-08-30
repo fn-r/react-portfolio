@@ -10,8 +10,8 @@
 ## About
 My portfolio site build with React.
 
-<a target="_blank" href="https://farahn.netlify.app/">
-    <img src="https://github.com/fn-r/portfolio/blob/main/images/projects/portfolio.jpg" width="100%" alt="Portfolio"/>
+<a target="_blank" href="https://farah-nadhirah.netlify.app/">
+    <img src="https://github.com/fn-r/portfolio/blob/main/images/gif/react-portfolio.gif?raw=true" width="100%" alt="Portfolio"/>
 </a>
 
 ## Technology Stack

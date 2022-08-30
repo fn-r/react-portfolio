@@ -19,7 +19,7 @@ const MetaTags = () => (
         <meta property="twitter:creator" content="Farah Nadhirah" />
         <meta property="twitter:site" content="https://farahn.netlify.app/" />
         <meta property="twitter:card" content="Software engineer based in Kuala Belait, Brunei Darussalam" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://github.com/fn-r/portfolio/blob/main/images/projects/react-portfolio.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Farah Nadhirah" />
         <meta property="og:description" content="Software engineer based in Kuala Belait, Brunei Darussalam" />
@@ -205,12 +205,21 @@ const RenderContact = () => {
                                     {social_data && social_data.map(data => {
                                         return (
                                             <a href={data.link} rel="noopener noreferrer" target="_blank">
-                                                <span>{data.svg}</span>
-                                                <p className="text-lg text-gray-400 mb-4">{data.name}</p>
+                                                <p className="text-lg text-gray-600 tracking-wide mb-4 flex items-center gap-2">
+                                                    <span>{data.svg}</span>
+                                                    {data.name}
+                                                </p>
                                             </a>
                                         )
                                     })}
-                                    <p className="text-lg text-gray-400 mb-4">Mail</p>
+                                    <a href="mailto:fn.rusli@outlook.com" rel="noopener noreferrer" target="_blank">
+                                        <p className="text-lg text-gray-600 tracking-wide mb-4 flex items-center gap-2">
+                                            <span><svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+                                            </svg></span>
+                                            fn.rusli@outlook.com
+                                        </p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
