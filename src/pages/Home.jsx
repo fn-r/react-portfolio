@@ -226,7 +226,8 @@ const RenderContact = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <form name="contact-form" data-netlify="true" className="w-full md:w-1/2 p-6">
+                    <form name="contact-form" method="post" data-netlify="true" className="w-full md:w-1/2 p-6">
+                        <input type="hidden" name="form-name" value="contact" />
                         <motion.div
                             variants={formVariants}
                             initial="offscreen"
@@ -236,18 +237,18 @@ const RenderContact = () => {
                         >
                             <div className="flex flex-wrap max-w-xl mx-auto">
                                 <div className="w-full mb-5">
-                                    <input className="w-full px-5 py-4 text-white text-base bg-transparent border border-gray-700 outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 rounded" type="text" placeholder="Your full name" />
+                                    <input className="w-full px-5 py-4 text-white text-base bg-transparent border border-gray-700 outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 rounded" type="text" placeholder="Your full name" name="name" />
                                 </div>
                                 <div className="w-full mb-5">
-                                    <input className="w-full px-5 py-4 text-white text-base bg-transparent border border-gray-700 outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 rounded" type="text" placeholder="Your email address" />
+                                    <input className="w-full px-5 py-4 text-white text-base bg-transparent border border-gray-700 outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 rounded" type="text" placeholder="Your email address" name="email" />
                                 </div>
                                 <div className="w-full mb-5">
-                                    <textarea className="w-full h-40 px-5 py-4 text-white text-base bg-transparent border border-gray-700 outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 resize-none rounded" type="text" placeholder="Write message"></textarea>
+                                    <textarea className="w-full h-40 px-5 py-4 text-white text-base bg-transparent border border-gray-700 outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-400 resize-none rounded" type="text" placeholder="Write message" name="message"></textarea>
                                 </div>
                                 <div className="w-full mb-5">
                                     <div className="group relative">
                                         <div className="absolute top-0 left-0 w-full h-full bg-gradient-green opacity-0 group-hover:opacity-50 rounded-lg transition ease-out duration-300"></div>
-                                        <button className="p-1 w-full font-heading font-semibold text-xs text-gray-900 uppercase tracking-px overflow-hidden rounded-md">
+                                        <button type="submit" className="p-1 w-full font-heading font-semibold text-xs text-gray-900 uppercase tracking-px overflow-hidden rounded-md">
                                             <div className="relative p-5 px-11 bg-gradient-green overflow-hidden rounded-md">
                                                 <div className="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-white transition ease-in-out duration-500"></div>
                                                 <p className="relative z-10">Send message</p>
