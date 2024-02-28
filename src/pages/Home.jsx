@@ -6,7 +6,6 @@ import { NavHashLink } from "react-router-hash-link";
 import { TypeAnimation } from "react-type-animation";
 import HeaderNavBar from "../components/HeaderNavBar";
 import MainNavBar from "../components/MainNavBar";
-import OverlayForm from "../components/OverlayForm";
 import Portfolio from "../components/Portfolio";
 import { about_data, project_data, social_data } from "../data/data";
 import { headerGIF, conRadial2, logoWhite, featRadial1, heroLine2, heroLine3, aboutRadial2 } from "../utils/Assets";
@@ -339,8 +338,6 @@ const Home = () => {
             <RenderContact />
             <RenderFooter />
             <RenderScrollProgress />
-
-            <OverlayForm />
         </>
     )
 }
